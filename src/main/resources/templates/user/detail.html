@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        window.onload = function(){
+            loadMenu();
+            loadCategory();
+            productBestSell();
+            loadAproduct();
+        }
+    </script>
+</head>
+<body>
+    <div id="menu"></div>
+
+    <div class="contentmain">
+        <div class="container">
+            <div class="marque">
+                <marquee>Sản Phẩm Sạch - Đặt Niềm Tin Vào Nguồn Gốc, Hưởng Lợi Cho Sức Khỏe</marquee>
+            </div>
+            <div class="row">
+                <div id="maincategory" class="col-lg-20p col-md-3 col-sm-3">
+                    <div class="maincategory">
+                        <div class="divtitledm">
+                            <span>DANH MỤC SẢN PHẨM</span>
+                        </div>
+                        <div id="listcategory">
+                            <a href="" class="category-item"><i class="fa fa-caret-right"></i> Giống cây nhập khẩu</a>
+                        </div>
+                    </div>
+                    <div class="spbanchayright">
+                        <div class="divtitledm">
+                            <span>SẢN PHẨM BÁN CHẠY</span>
+                        </div>
+                        <div id="listspbanchayright">
+                            <!-- <div class="singleproduct">
+                                <div class="zoom-img"><a href="detail"><img class="imgproduct" src="image/pro1.jpg"></a></div>
+                                <a class="proname" href="detail">CÂY BÒN BON THÁI LAN</a>
+                                <span class="pricepro">Giá: 270.000đ</span>
+                                <span class="btncartpro"><i class="fa fa-shopping-bag"></i> Giỏ hàng</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-80p col-md-9 col-sm-9">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                            <img id="imgdetailpro" src="" class="imgdetailpro">
+                            <div class="listimgdetail row" id="listimgdetail">
+                                <div class="col-lg-20p col-md-3 col-sm-4 col-4 singdimg">
+                                    <img onclick="clickImgdetail(this)" src="image/pro1.jpg" class="imgldetail imgactive">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                            <span class="detailnamepro" id="detailnamepro">name</span>
+                            <div class="blockdetailpro">
+                                <span class="codepro" id="codepro">STM6099-DEN</span>
+                                <span class="quansale" id="quansale">Đã bán 5.0K</span>
+                            </div>
+                            <p class="pricedetail" id="pricedetail">269.000đ</p>
+    
+                            <div class="addcartdetail">
+                                <button onclick="upAndDownDetail(-1)" class="cartbtn"> - </button>
+                                <input id="inputslcart" min="1" class="inputslcart" value="1">
+                                <button onclick="upAndDownDetail(1)" class="cartbtn"> + </button></div>
+                            <div class="btndetail">
+                                <button id="btnaddcart" class="btnaddcart"><i class="fa fa-shopping-cart"></i> Thêm giỏ hàng</button>
+                                <button id="muangay" class="btnmuangay">Mua ngay</button>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-12">
+                            <div class="blocktitle">Mô tả sản phẩm</div>
+                            <div id="descriptiondetail">
+                                fgyewuwefeffbuwefbwef
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-7 col-md-8 col-sm-12 col-12">
+                            <p class="titledes">Phản hổi</p>
+                            <div class="listcautlct" id="listcautlct">
+                                <!-- <div class="singlectlct">
+                                    <div class="row">
+                                        <div class="col-11">
+                                            <div class="d-flex nguoidangctl">
+                                                <img class="avtuserdangctl" src="image/avatar.webp">
+                                                <span class="usernamedangctl">Username</span>
+                                                <span class="ngaytraloi">16-07-2023</span>
+                                            </div>
+                                            <div class="contentctlct">Mua với giá dùng thử 269K thấy sản phẩm năm nay chất lượng đã cải tiến hơn nhiều, giao hàng cũng nhanh hơn. đặt ở web nên yên tâm không gặp lừa đảo hàng nhái vì mình bị gặp mấy lần rồi. cảm ơn shop!</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+            
+                            <div class="col-sm-12 col-12" id="mycomment">
+                                <label id="titlerep" class="lb-chon-danhmuc">Bình luận của bạn</label>
+                                <textarea id="noidungbl" class="form-control"></textarea>
+                                <button onclick="saveComment()" class="btn btn-primary form-control">Binh luận</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="blocktitle">Sản phẩm liên quan</div>
+                            <div class="row" id="listproductlq">
+                                <!-- <div class="col-lg-20p col-md-4 col-sm-3 col-6 singleproduct">
+                                    <div class="zoom-img"><a href="detail"><img class="imgproduct" src="image/pro1.jpg"></a></div>
+                                    <a class="proname" href="detail">CÂY BÒN BON THÁI LAN</a>
+                                    <span class="pricepro">Giá: 270.000đ</span>
+                                    <span class="btncartpro"><i class="fa fa-shopping-bag"></i> Giỏ hàng</span>
+                                </div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="background-image: url(image/footer.png);"></footer>
+</div>
+</body>
+<script>
+    function upAndDownDetail(val) {
+        var quan = document.getElementById("inputslcart").value;
+        if (val < 0 && quan == 1) {
+            return;
+        }
+        document.getElementById("inputslcart").value = Number(quan) + Number(val)
+    }
+    var check = 1;
+    function readmore() {
+        if (check % 2 != 0) {
+            document.getElementById("descriptiondetail").style.height = 'auto'
+        } else {
+            document.getElementById("descriptiondetail").style.height = '200px'
+        }
+        check++;
+    }
+</script>
+
+</html>

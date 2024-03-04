@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/product.js"></script>
+    <script>
+        window.onload = function(){
+            loadMenu();
+            loadCategory();
+            productBestSell();
+            showAllCart();
+        }
+    </script>
+</head>
+<body>
+    <div id="menu"></div>
+
+    <div class="contentmain">
+        <div class="container">
+            <div class="marque">
+                <marquee>Chất Lượng Tận Tâm, Hoa Quả Sạch Đến Tận Tay Bạn</marquee>
+            </div>
+            <div class="row">
+                <div id="maincategory" class="col-lg-20p col-md-3 col-sm-3">
+                    <div class="maincategory">
+                        <div class="divtitledm">
+                            <span>DANH MỤC SẢN PHẨM</span>
+                        </div>
+                        <div id="listcategory">
+                            <a href="" class="category-item"><i class="fa fa-caret-right"></i> Giống cây nhập khẩu</a>
+                        </div>
+                    </div>
+                    <div class="spbanchayright">
+                        <div class="divtitledm">
+                            <span>SẢN PHẨM BÁN CHẠY</span>
+                        </div>
+                        <div id="listspbanchayright">
+                            <!-- <div class="singleproduct">
+                                <div class="zoom-img"><a href="detail"><img class="imgproduct" src="image/pro1.jpg"></a></div>
+                                <a class="proname" href="detail">CÂY BÒN BON THÁI LAN</a>
+                                <span class="pricepro">Giá: 270.000đ</span>
+                                <span class="btncartpro"><i class="fa fa-shopping-bag"></i> Giỏ hàng</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-80p col-md-9 col-sm-9">
+                    <div class="blocktitle" style="margin-top: 0px;">Giỏ hàng</div>
+                    <div class="listcart">
+                        <span class="cartname">GIỎ HÀNG</span>
+                        <span class="slcarts">(<span id="slcart">0</span>) Sản phẩm</span>
+    
+                        <div class="cartres">
+                            <table class="table tablecart">
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Đơn giá</th>
+                                    <th style="text-align: center;">Số lượng</th>
+                                    <th style="width: 100px;">Tổng tiền</th>
+                                </tr>
+                                <tbody id="listcartDes">
+                                    <!-- <tr>
+                                        <td>
+                                            <a href=""><img class="imgprocart" src="image/pro1.jpg"></a>
+                                            <div class="divnamecart">
+                                                <a href="" class="nameprocart">BƯỞI HƯƠNG THÁI LAN</a>
+                                            </div>
+                                        </td>
+                                        <td><p class="boldcart">299.000đ</p></td>
+                                        <td>
+                                            <div class="clusinp"><button class="cartbtn"> - </button>
+                                            <input class="inputslcart">
+                                            <button class="cartbtn"> + </button></div>
+                                        </td>
+                                        <td>
+                                            <div class="tdpricecart">
+                                                <p class="boldcart">598.000đ</p>
+                                                <p class="delcart"><i class="fa fa-trash-o facartde"></i></p>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="ttcart">
+                        <div class="tongdon">
+                            <span class="tds">Tổng đơn: </span><span class="tonggiatien" id="tonggiatien">0đ</span>
+                            <button onclick="location.href='checkout'" class="btnthanhtoan">Thanh toán</button>
+                        </div>
+
+                        <p>Mọi đơn hàng trên hệ thống sẽ được giảm giá phí vận chuyển chỉ còn <span class="buypl">30.000 VND</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="background-image: url(image/footer.png);"></footer>
+</div>
+</body>
+
+</html>

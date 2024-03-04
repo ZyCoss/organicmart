@@ -1,0 +1,1222 @@
+.imgbanner{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+#navbars{
+    background-color: #399432;
+    min-height: 40px;
+}
+#navbars .menulink{
+    color: #fff;
+}
+.divsearch{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.ipsearch{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.ipsearch:focus{
+    outline: none;
+}
+.btnsearch{
+    background-color: #fff;
+    border: none;
+    height: 100%;
+    border-radius: 5px;
+    float: right;
+}
+
+#footer{
+    margin-top: 100px;
+}
+#footer a{
+    color: #fff !important;
+    text-decoration: none;
+}
+#footer p{
+    color: #fff !important;
+    text-decoration: none;
+}
+#footer h6{
+    color: #fff !important;
+    text-decoration: none;
+}
+#footer span{
+    color: #fff !important;
+    text-decoration: none;
+}
+.marque{
+    margin-top: 10px;
+    border: 1px solid #b8b8b8;
+    padding: 2px 15px 0px 15px;
+}
+.marque{
+    color: #f40045;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.divtitledm{
+    background-color: #3a9633;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    color: #fff;
+}
+
+.maincategory{
+    border-left: 1px solid #b8b8b8;
+    border-right: 1px solid #b8b8b8;
+}
+.category-item{
+    font-weight: 400;
+    color: #368e2f;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b8b8b8;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+.blocktitle{
+    margin-top: 20px;
+    background-color: #ededed;
+    padding: 3px 0px 3px 10px;
+    border-bottom: 6px solid #919090;
+}
+#listproductindex{
+    margin-top: 15px;
+}
+.zoom-img {
+    overflow: hidden;
+}
+.imgproduct{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 4px solid #e6e6e6;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.imgproduct:hover{
+    transform: scale(1.2);
+}
+.proname{
+    color: #333;
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    font-weight: 500;
+    overflow: hidden;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}
+.pricepro{
+    color: #dd1600;
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.btncartpro{
+    color: #fff;
+    background: #3a9633;
+    border: none;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.singleproduct{
+    margin-top: 25px;
+}
+.blofindex{
+    margin-top: 20px;
+}
+.blognamespe{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+.descriptionblog{
+    overflow: hidden;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.tille-single-blogindex{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 22px;
+    max-height: 44px;
+    display: block;
+    overflow: hidden;
+    color: #368e2f;
+    text-decoration: none;
+}
+.desblogindex{
+    overflow: hidden;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+    font-size: 0.8rem;
+}
+
+.spbanchayright{
+    margin-top: 30px;
+}
+
+.contentlogin {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.loginform {
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.titellogin {
+    color: #595959;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 2rem;
+}
+
+.dangtl {
+    color: #151560 !important;
+    font-weight: 700;
+    font-family: 'SVN-Gilroy Bold';
+    font-size: 26px;
+}
+
+.kytl {
+    color: #fcaf17 !important;
+    font-weight: 700;
+    font-family: 'SVN-Gilroy Bold';
+    font-size: 26px;
+}
+
+.loginform {
+    display: block;
+    margin-top: 15px;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+.plogintl {
+    text-align: center;
+}
+.inputloginform {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.inputform {
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    padding: 0 18px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #e0e0d1;
+}
+.btndn {
+    display: inline-block;
+    width: calc(50% - 5px);
+    height: 48px;
+    line-height: 48px;
+    background: #fcaf17;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'SVN-Gilroy Bold';
+    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.linkquenmk {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.aquenmk {
+    color: #FCAF17;
+    text-decoration: none;
+}
+.nothvaccount {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btnhuylogin {
+    width: 49%;
+    border: none;
+    font-family: 'SVN-Gilroy Bold';
+    line-height: 48px;
+    background: #FEEEEA;
+    color: #fcaf17;
+    text-align: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.btnhuylogin:hover {
+    background: #fcaf17;
+    color: #fff;
+}
+
+.btntt {
+    width: 49%;
+    float: right;
+    font-family: 'SVN-Gilroy Bold';
+    line-height: 48px;
+    background: #fcaf17;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.noteregis {
+    text-align: center;
+    width: 385px;
+    margin: 0 auto 10px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    font-size: 0.9rem;
+}
+
+.quenmk{
+    text-align: center;
+    margin-top: 20px;
+    color: #a8a7a7;
+    text-decoration: none;
+    font-size: 13px;
+}
+.quenmk a{
+    color: #8c8b8b;
+    text-decoration: none;
+}
+.filter {
+    padding-top: 30px;
+}
+.lb-chon-danhmuc {
+    margin-bottom: 15px;
+}
+.btn-apdung {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid blue;
+    float: right;
+}
+.price-range-field {
+    width: 40%;
+    display: inline;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.price-range-field:focus {
+    outline: none;
+}
+.ui-slider-handle {
+    border-radius: 50%;
+    cursor: pointer !important;
+}
+
+.ui-widget-header {
+    background-color: #2196F3;
+}
+
+.lb-chon-danhmuc {
+    font-weight: bold;
+}
+
+.filterdiv {
+    margin-top: 20px;
+    background-color: #fff3cd;
+    padding: 10px 10px 10px 10px;
+}
+
+.filterdiv>select {
+    float: right;
+}
+.checkbox-custom {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    /* background-color: #eee; */
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.checkbox-custom:hover input~.checkmark-checkbox {
+    /* background-color: #ccc; */
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.checkbox-custom input:checked~.checkmark-checkbox {
+    background-color: #ee4d2d;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.checkbox-custom input:checked~.checkmark-checkbox:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.checkbox-custom .checkmark-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.listimgdetail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgldetail {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.imgdetailpro {
+    width: 100%;
+}
+.imgactive {
+    border: 2px solid #fcaf17;
+    border-radius: 3px;
+    padding: 2px;
+}
+.detailnamepro {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: #17191C;
+}
+
+.blockdetailpro {
+    position: relative;
+}
+.codepro {
+    padding: 0px 10px 0px 0px;
+    border-right: 1px solid #D9D9D9;
+    color: #7A7A9D;
+    font-family: 'SVN-Gilroy';
+}
+
+.quansale {
+    padding: 0px 0px 0px 10px;
+    color: #17191C;
+    font-family: 'SVN-Gilroy';
+}
+
+.pricedetail {
+    margin-top: 5px;
+    color: rgb(23, 25, 28);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'SVN-Gilroy Bold';
+    line-height: 22px;
+}
+.addcartdetail {
+    margin-top: 15px;
+}
+.cartbtn {
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    width: 37px;
+    background-color: #fff;
+    height: 36px;
+    float: left;
+    border: 1px solid #D9D9D9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #62676D;
+    font-size: 20px;
+}
+
+.inputslcart {
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    width: 37px;
+    background-color: #fff;
+    height: 36px;
+    float: left;
+    border: 1px solid #D9D9D9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #62676D;
+    font-size: 20px;
+    text-align: center;
+}
+.btndetail {
+    clear: both;
+    padding-top: 15px;
+}
+.btnaddcart {
+    background: #FFF !important;
+    border: 2px solid #1C2430 !important;
+    color: #1C2430;
+    width: 50%;
+    min-height: 40px;
+}
+
+.btnmuangay {
+    width: 40%;
+    height: 42px;
+    border: none;
+    background: #FCAF17;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+.titledes {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+.readmore {
+    color: blue;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.singlectlct {
+    margin-top: 40px;
+}
+.nguoidangctl {
+    margin-bottom: 10px;
+}
+
+.avtuserdangctl {
+    width: 30px;
+}
+.usernamedangctl {
+    margin-left: 5px;
+    color: blue;
+}
+
+.ngaytraloi {
+    /* margin-left: auto; */
+    margin-left: 20px;
+    color: gray;
+}
+.contentctlct {
+    word-break: break-word;
+    font-size: 14px;
+    color: #212b35;
+}
+#mycomment {
+    margin-top: 50px;
+}
+#noidungbl {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 300px;
+}
+.titlebg{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #337ab7;
+    display: block;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.inforblg{
+    display: flex;
+}
+.iconblg{
+    margin-left: 20px;
+}
+.inforct{
+    font-size: 0.9rem;
+    margin-right: 2px;
+}
+.inforblg{
+    margin-top: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+.infbg{
+    margin-top: 10px;
+}
+.imgbgsingle{
+    width: 100%;
+}
+.contentblgs{
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: initial;
+}
+.btnreadmore{
+    text-decoration: none;
+    display: inline-block;
+    background: #78b105;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 2px 9px;
+    font-size: 13px;
+    color: #fff;
+    margin-top: 4px;
+    margin-top: 15px;
+}
+#listinstr{
+    margin-top: 50px;
+}
+.singlebg{
+    margin-top: 30px;
+}
+#searchblg{
+    float: right;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.pointermenu {
+    color: #fff;
+    margin-right: 15px;
+}
+.pointer{
+    cursor: pointer;
+}
+.page-link{
+    cursor: pointer;
+}
+.slcartmenu {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -8px;
+    width: auto;
+    line-height: 18px;
+    height: 19px;
+    background: #fcaf17;
+    color: #11006F;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 13px;
+    min-width: 20px;
+}
+.listcart{
+    margin-top: 40px;
+}
+.imgprocart {
+    width: 100px;
+    float: left;
+}
+.cartname {
+    text-transform: uppercase!important;
+    font-family: 'SVN-Gilroy Bold';
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.slcarts {
+    color: #7A7A9D;
+    font-family: 'SVN-Gilroy';
+    font-weight: 500;
+}
+.divnamecart {
+    padding-left: 10px;
+    position: relative;
+    height: 100px;
+    margin-left: 100px;
+}
+.nameprocart {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+}
+.delcart{
+    cursor: pointer;
+}
+.tongdon {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.tonggiatien {
+    color: #000;
+    font-size: 1.1rem;
+    font-family: 'SVN-Gilroy Bold';
+    font-weight: bold;
+}
+.btnthanhtoan {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    background-color: #fcaf17;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'SVN-Gilroy Bold';
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+}
+.freeship {
+    font-weight: 700 !important;
+    color: rgb(57, 172, 109) !important;
+    font-family: Insider-Montserrat, sans-serif !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    text-align: left !important;
+}
+.buypl {
+    font-weight: 700 !important;
+    color: rgb(57, 172, 109) !important;
+    font-family: Insider-Montserrat, sans-serif !important;
+}
+.imgcheckout{
+    width: 100px;
+}
+
+
+/* checkout */
+.inforship {
+    margin-top: 20px;
+}
+.titlecheckout {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.formadd input:focus::placeholder {
+    opacity: 0;
+}
+.fomd {
+    margin-top: 20px;
+}
+.tablepay {
+    border: 1px solid #e0e0d1;
+    /* border-collapse:separate; 
+    border-spacing: 0 1em; */
+}
+.tablepay td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.paycode {
+    font-size: 28px;
+    color: #fcaf17;
+}
+.radiocustom {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.radiocustom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.radiocustom:hover input~.checkmark {
+    background-color: #828282;
+}
+
+.radiocustom input~.checkmark {
+    background-color: #828282;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.radiocustom input:checked~.checkmark {
+    background-color: #fcaf17;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.radiocustom input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.radiocustom .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.momopay {
+    width: 30px;
+}
+.infordoncheck {
+    background-color: #e7e8fc;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+.dhcheck {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#listproductcheck {
+    padding: 10px;
+    margin-top: 20px;
+}
+.colimgcheck {
+    position: relative;
+}
+.procheckout {
+    width: 100%;
+}
+.slpro {
+    background-color: #fcaf17;
+    font-size: .78em;
+    white-space: nowrap;
+    padding: 0 0.62em;
+    border-radius: 2em;
+    color: #fff;
+    position: absolute;
+    box-sizing: border-box;
+    min-width: 1.75em;
+    height: 1.75em;
+    text-align: center;
+    line-height: 1.75em;
+    top: -1em;
+}
+.namecheck {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+.singleck{
+    margin-top: 15px;
+}
+.colright {
+    text-align: right;
+}
+.ylsbold {
+    color: #fcaf17;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.magg{
+    padding: 10px;
+    margin-top: 20px;
+}
+.btndathang {
+    background-color: #fcaf17;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+.feevc {
+    border: 1px solid #cecdcd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #545454;
+    margin-top: 10px;
+    position: relative;
+}
+.contentaccount{
+    padding-left: 42px;
+    padding-right: 30px;
+    background-color: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.navleft {
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+.avaaccount {
+    padding: 20px;
+}
+.avataracc {
+    display: block;
+    margin: 0 auto;
+}
+.fullnamacc {
+    text-align: center;
+    margin-top: 10px;
+}
+.btnlogoutacc {
+    display: block;
+    line-height: 24px;
+    background: #fcaf17;
+    color: #FFF;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+}
+
+.sinv {
+    padding-top: 20px;
+}
+.tabdv {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.tabdv a {
+    color: #000;
+    text-decoration: none;
+    background: transparent;
+}
+
+.tabdv:hover {
+    background-color: #FEEEE7;
+}
+
+.imgau {
+    width: 20px;
+}
+.navright {
+    background-color: #fff;
+    min-height: 500px;
+}
+.activetabdv {
+    background-color: #FEEEE7;
+}
+
+.headeraccount {
+    padding: 15px 20px 10px 20px;
+    border-bottom: 2px solid #f5f5f0;
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 60px;
+}
+
+.headeraccount .right_flex {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.btnsuathongtin {
+    height: 40px;
+    margin-top: 10px;
+    background: #fcaf17;
+    color: #FFF;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+}
+
+.contentacc {
+    padding: 0px 20px 10px 20px;
+}
+
+.preinfor {
+    display: block;
+    line-height: 40px;
+    font-family: 'SVN-Gilroy', sans-serif;
+}
+
+.inforaccleft {
+    width: 50%;
+    float: left;
+}
+
+.fontyel {
+    color: #fcaf17 !important;
+    font-family: 'SVN-Gilroy Bold';
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.smyl {
+    color: #7A7A9D;
+    font-family: 'SVN-Gilroy';
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.passacc {
+    padding-left: 20px;
+}
+.textrf {
+    color: #7A7A9D;
+    font-family: 'SVN-Gilroy';
+    line-height: 60px;
+    margin-right: 10px;
+}
+.thead-default {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0d1 !important;
+    border-bottom: 1px solid #e0e0d1 !important;
+}
+
+.thead-default th {
+    font-family: 'SVN-Gilroy Bold';
+    /* border: none; */
+    text-align: left;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.thead-default td {
+    font-size: 0.9rem;
+}
+.floatr {
+    text-align: right !important;
+}
+
+.yls {
+    color: #fcaf17;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.pointer-event{
+    cursor: pointer;
+}
+.huydon{
+    cursor: pointer;
+}
+.headerdetail {
+    font-size: 0.9rem !important;
+}
+
+.headerdetail .yls {
+    font-size: 0.9rem !important;
+}
+
+.shipinfor {
+    margin-top: 30px;
+}
+
+.tennguoinhan {
+    font-weight: bold;
+}
+
+.blockinfor {
+    min-height: 120px;
+    padding: 13px 25px 10px 20px;
+    border: 1px solid #DDE1EF;
+    background: none;
+    margin-top: 10px;
+}
+
+.blockinfor span {
+    color: #212B25;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.ttshipinfor {
+    margin-top: 10px;
+}
+.imgdetailacc {
+    width: 100px;
+}
+
+#loadingpage {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    display: none;
+    height: 100vh !important;
+    background-color: rgba(252, 252, 250, 0.5);
+    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lbacc{
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+.Paid{
+    color: green;
+    font-weight: bold;
+}
+.UnPaid{
+    color: red;
+}
+
+
+@media screen and (min-width: 992px) {
+    .col-lg-20p {
+        width: 20%;
+    }
+    .col-lg-80p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #maincategory {
+        display: none;
+    }
+}

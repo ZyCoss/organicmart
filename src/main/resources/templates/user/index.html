@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/instruct.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        window.onload = function(){
+            loadMenu();
+            loadCategory();
+            loadProductIndex(0);
+            lastInstruct();
+            loadInstructIndex();
+            productBestSell();
+        }
+    </script>
+</head>
+<body>
+<div id="menu">
+
+</div>
+
+<div class="contentmain">
+    <div class="container">
+        <div class="marque">
+            <marquee>Hòa Mình Trong Hương Vị Sức Khỏe - Hoa Quả Sạch Mỗi Ngày</marquee>
+        </div>
+        <div class="row">
+            <div id="maincategory" class="col-lg-20p col-md-3 col-sm-3">
+                <div class="maincategory">
+                    <div class="divtitledm">
+                        <span>DANH MỤC SẢN PHẨM</span>
+                    </div>
+                    <div id="listcategory">
+                        <a href="" class="category-item"><i class="fa fa-caret-right"></i> Giống cây nhập khẩu</a>
+                    </div>
+                </div>
+                <div class="spbanchayright">
+                    <div class="divtitledm">
+                        <span>SẢN PHẨM BÁN CHẠY</span>
+                    </div>
+                    <div id="listspbanchayright">
+                        <!-- <div class="singleproduct">
+                            <div class="zoom-img"><a href="detail"><img class="imgproduct" src="image/pro1.jpg"></a></div>
+                            <a class="proname" href="detail">CÂY BÒN BON THÁI LAN</a>
+                            <span class="pricepro">Giá: 270.000đ</span>
+                            <span class="btncartpro"><i class="fa fa-shopping-bag"></i> Giỏ hàng</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-80p col-md-9 col-sm-9">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img style="height: 300px;object-fit: cover" src="image/bn1.jpg" class="d-block w-100"></div>
+                        <div class="carousel-item"><img style="height: 300px;object-fit: cover" src="image/bn2.jpg" class="d-block w-100"></div>
+                        <div class="carousel-item"><img style="height: 300px;object-fit: cover" src="image/bn3.jpg" class="d-block w-100"></div>
+                        <div class="carousel-item"><img style="height: 300px;object-fit: cover" src="image/bn4.jpg" class="d-block w-100"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="blocktitle">Tất cả sản phẩm</div>
+                <div class="row" id="listproductindex">
+                    <div class="col-lg-20p col-md-4 col-sm-3 col-6 singleproduct">
+                        <div class="zoom-img"><a href="detail"><img class="imgproduct" src="image/pro1.jpg"></a></div>
+                        <a class="proname" href="detail">CÂY BÒN BON THÁI LAN</a>
+                        <span class="pricepro">Giá: 270.000đ</span>
+                        <span class="btncartpro"><i class="fa fa-shopping-bag"></i> Giỏ hàng</span>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation example" style="margin-top: 30px;">
+                    <ul class="pagination" id="pageable">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    </ul>
+                </nav>
+
+                <div class="blocktitle">News</div>
+                <div class="row blofindex">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12" id="instructmain">
+                        <!-- <div class="zoom-img"><a href=""><img class="imgproduct" src="image/blog1.jpg"></a></div>
+                        <a href="" class="blognamespe">Dự đoán giá hoa ly tết năm 2019</a>
+                        <span class="descriptionblog">Càng gần đến Tết thì nhu cầu mua sắm của người tiêu dùng càng tăng cao, các hoạt động buôn</span> -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="row" id="listinstructindex">
+                            <!-- <div class="row single-blogindex">
+                                <div class="col-3">
+                                    <div class="zoom-img"><a href=""><img class="imgproduct" src="image/blog2.jpg"></a></div>
+                                </div>
+                                <div class="col-9">
+                                    <a href="" class="tille-single-blogindex">Một Số Loài Hoa,Cây Cảnh Tết Được Nhiều Người Ưa Chuộng</a>
+                                    <span class="desblogindex">Năm cũ sắp qua đi và 1 năm mới lại sắp đến, để chuẩn bị “đổi mới” cho căn nhà</span>
+                                </div>
+                                <div class="col-12"><hr></div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" style="background-image: url(image/footer.png);"><footer class="text-center text-lg-start text-muted"></footer>
+</div>
+</body>
+</html>
