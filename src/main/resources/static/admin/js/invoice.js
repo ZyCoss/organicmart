@@ -79,6 +79,7 @@ async function loadDetailInvoice(id) {
     document.getElementById("addnhan").innerHTML = result.address
     document.getElementById("phonenhan").innerHTML = result.phone
     document.getElementById("ghichunh").innerHTML = result.note
+    document.getElementById("tennguoinhan").innerHTML = result.receiverName
     document.getElementById("loaithanhtoan").innerHTML = result.payType==true?'Thanh toán bằng momo':'Thanh toán khi nhận hàng (COD)'
 }
 
